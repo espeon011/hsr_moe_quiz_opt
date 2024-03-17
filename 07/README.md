@@ -74,32 +74,6 @@ $$\sum_{i=1}^2 v_i = 1 \quad \text{and} \quad \sum_{i=1}^2 w_i = 1$$
 - $y_2 + t \le 1 + p$: 銀の扉が嘘つきであれば金の扉が「銀の扉の後ろにはモンスターがいる」と言うであろう場合逆のことを話す
 - $p = 1$: 銀の扉は「(金の扉は)この後ろにあるのは財宝であると言うのだろう」と答えた
 
-#### 補足: $a \land b \Rightarrow c$ の定式化について
-
-$a$, $b$, $c$ を $0\text{-}1$ 決定変数として, $a \land b \Rightarrow c$ の形の制約条件をどのように表せばよいか. 
-これは対偶を取ると導出することができる. 
-対偶を取ると $\lnot c \Rightarrow \lnot a \lor \lnot b$ となり, これを制約式に展開すると
-
-$$
-1 - c \le (1 - a) + (1 - b).
-$$
-
-変形して
-
-$$
-a + b \le 1 + c
-$$
-
-を得る. 
-ちなみに
-
-- $a \land b \Rightarrow c$ は $a + b \le 1 + c$ (上記)
-- $a \lor b \Rightarrow c$ は $a + b \le 2 c$
-- $a \Rightarrow b \land c$ は $2 a \le b + c$
-- $a \Rightarrow b \lor c$ は $a \le b + c$
-
-と定式化できる. 
-
 ### 実行結果
 
 ```shell
